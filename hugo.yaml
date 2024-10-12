@@ -1,0 +1,78 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Cluyverth W.
+theme: ["PaperMod"]
+
+taxonomies:
+  tag: "tags"
+
+params:
+  profileMode:
+    enabled: true
+    title: "<Title>" # optional default will be site title
+    subtitle: "'Luck is what happens when preparation meets opportunity' - Seneca"
+    imageUrl: "/images/profile.png" # optional
+    imageTitle: "Cluyverth W. Profile Picture" # optional
+    imageWidth: 220 # custom size
+    imageHeight: 220 # custom size
+    buttons:
+      - name: My Resume
+        url: "<link1>"
+
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/Cluyverth"
+    - name: linkedin
+      url: 'https://linkedin.com/in/cluyverth/'
+    - name: "youtube"
+      url: "https://youtube.com/Byakkott"
+    - name: x
+      url: 'https://x.com/cluyverth'
+    - name: instagram
+      url: 'https://instagram.com/cluyverth'
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon/pine-tree-doodle.ico"
+    favicon16x16: "/favicon/pine-tree-doodle-16.png"
+    favicon32x32: "/favicon/pine-tree-doodle-32.png"
+    apple_touch_icon: "/favicon/pine-tree-doodle-apple-touch-icon.png"
+    safari_pinned_tab: "/favicon/pine-tree-doodle-16.png"
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  
+menu:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 10
+    - identifier: archive
+      name: archive
+      url: /archive/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 40
+
+# For search: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
