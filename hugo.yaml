@@ -16,15 +16,15 @@ params:
     imageWidth: 220 # custom size
     imageHeight: 220 # custom size
     buttons:
-      - name: My Resume
+      - name: Download My Resume
         url: "<link1>"
 
   socialIcons: # optional
-    - name: "github"
+    - name: github
       url: "https://github.com/Cluyverth"
     - name: linkedin
       url: 'https://linkedin.com/in/cluyverth/'
-    - name: "youtube"
+    - name: youtube
       url: "https://youtube.com/Byakkott"
     - name: x
       url: 'https://x.com/cluyverth'

@@ -1,7 +1,7 @@
 +++
 title = 'Creating a Minimalist Website with Hugo'
 date = 2024-10-12T17:10:03-03:00
-draft = true
+draft = false
 
 author = "Cluyverth W."
 showToc = true
@@ -23,8 +23,6 @@ UseHugoToc = true
 tags = ["HelloWorld", "Hugo", "Go"]
 +++
 
-# Creating a Minimalist Website with Hugo, GitHub Pages, GitHub Actions, and PaperMod Theme
-
 ## Step 1: Install Hugo
 To install Hugo, you can use `winget`:
 
@@ -45,7 +43,7 @@ This will generate a new Hugo project in the `YourSite` folder.
 
 To use the PaperMod theme, you need to clone it into your `themes` directory. Go to the PaperMod GitHub repository for the official documentation.
 
-Run the following command to clone the theme:
+Run the following command inside `YourSite` folder to clone the theme:
 
 ```bash
 git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
